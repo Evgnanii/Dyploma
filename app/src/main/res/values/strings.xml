@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Своя игра</string>
+    <string name="new_Game">Новая игра</string>
+    <string name="settings">Настройки</string>
+    <string name="authorisation">Авторизация</string>
+    <string name="text_back_button">Назад</string>
+    <string name="game_settings">Правила игры</string>
+    <string name="time_settings">Настройки времени</string>
+    <string name="text_time_settings_timeToClick">Время на выбор вопроса</string>
+    <string name="text_time_settings_timeToAnswer">Время на ответ</string>
+    <string name="text_time_settings_timeToFinal">Время на обдумывание в финале</string>
+    <string name="text_game_settings_falseStart">Фальшстарты</string>
+    <string name="text_game_settings_Oral">Устная игра</string>
+    <string name="text_game_settings_Minus">Отнимать очки</string>
+    <string name="registration_button">Зарегистрироваться</string>
+    <string name="log_in">Войти</string>
+    <string name="player_role">Игрок</string>
+    <string name="presenter_role">Ведущий</string>
+    <string name="choose_role">Выберите роль</string>
+    <string name="already_reg">Уже есть аккаунт?\nНажмите для входа</string>
+    <string name="not_reg">Нет аккаунта? Нажмите для регистрации</string>
+    <string name="password_hint">Пароль</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="profile_settings">Настройки профиля</string>
+    <string name="save">Сохранить изменения</string>
+    <string name="nickname">Никнейм</string>
+    <string name="create_new_pack">Создание пакета</string>
+
+</resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textViewFalseStart"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/font1"
+        android:inputType="number"
+        android:text="@string/text_game_settings_falseStart"
+        android:textColor="@color/text_color"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintRight_toLeftOf="@id/checkboxFalseStart"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxOral"></TextView>
+
+    <TextView
+        android:id="@+id/textViewOral"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="25dp"
+        android:fontFamily="@font/font1"
+
+        android:inputType="number"
+        android:text="@string/text_game_settings_Oral"
+        android:textColor="@color/text_color"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFalseStart"
+        app:layout_constraintEnd_toStartOf="@+id/checkboxOral"
+        app:layout_constraintRight_toRightOf="parent"></TextView>
+
+    <TextView
+
+        android:id="@+id/textViewMinus"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="25dp"
+        android:fontFamily="@font/font1"
+        android:inputType="number"
+        android:maxLines="2"
+        android:minLines="2"
+        android:text="@string/text_game_settings_Minus"
+        android:textColor="@color/text_color"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOral"
+        app:layout_constraintEnd_toStartOf="@+id/checkboxMinus"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/checkboxMinus"
+        app:layout_constraintTop_toBottomOf="@+id/textView"></TextView>
+
+    <CheckBox
+
+        android:id="@+id/checkboxFalseStart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="50dp"
+        android:buttonTint="@color/text_color"
+        android:gravity="center"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxOral"></CheckBox>
+
+    <CheckBox
+
+        android:id="@+id/checkboxOral"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="150dp"
+        android:buttonTint="@color/text_color"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:layout_constraintBottom_toTopOf="@+id/checkboxFalseStart"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxMinus"></CheckBox>
+
+    <CheckBox
+
+        android:id="@+id/checkboxMinus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="150dp"
+        android:buttonTint="@color/text_color"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:layout_constraintBottom_toTopOf="@+id/checkboxOral"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"></CheckBox>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="450dp"
+        android:layout_height="200dp"
+        android:clickable="false"
+        android:fontFamily="@font/font1"
+        android:gravity="center"
+        android:text="@string/settings"
+        android:textColor="@color/text_color"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gameSettingsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "208015517650",
+    "firebase_url": "https://sigame-58a5e.firebaseio.com",
+    "project_id": "sigame-58a5e",
+    "storage_bucket": "sigame-58a5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208015517650:android:6b4d33684e32343f7dca0b",
+        "android_client_info": {
+          "package_name": "com.example.dyploma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208015517650-gqvfu8bc4el7bhfa83ap44lmh0hgitrb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dyploma",
+            "certificate_hash": "4bd39aa4258d19414a4ae65bed90f497f59e8873"
+          }
+        },
+        {
+          "client_id": "208015517650-30msko44e0e7lummbghrlder67rhcudk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBirszJdoke0UUmSm90gwqAvVZU9nQPku4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208015517650-30msko44e0e7lummbghrlder67rhcudk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dyploma">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Fullscreen">
+        <activity
+            android:name=".activities.EditTopicActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.CreatePackActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.LobbyActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.GameActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.GameSettingsActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.TimeSettingsActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="landscape"></activity>
+    </application>
+
+</manifest>
