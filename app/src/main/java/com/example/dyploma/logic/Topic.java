@@ -1,7 +1,5 @@
 package com.example.dyploma.logic;
 
-import com.example.dyploma.logic.Question;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -11,6 +9,15 @@ public class Topic  implements Serializable {
     public String getTopicName() {
         return topicName;
 
+    }
+
+    public Topic(String topicName) {
+        this.topicName = topicName;
+        this.questionList = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+            questionList.add(new Question("Вопрос " + i, "Ответ " + i, null
+                    , 100 * i));
+        }
     }
 
     public void setTopicName(String topicName) {

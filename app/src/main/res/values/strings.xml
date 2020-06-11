@@ -8,7 +8,7 @@
     <string name="time_settings">Настройки времени</string>
     <string name="text_time_settings_timeToClick">Время на выбор вопроса</string>
     <string name="text_time_settings_timeToAnswer">Время на ответ</string>
-    <string name="text_time_settings_timeToFinal">Время на обдумывание в финале</string>
+    <string name="text_time_settings_timeToFinal">Время на для фальшстарта</string>
     <string name="text_game_settings_falseStart">Фальшстарты</string>
     <string name="text_game_settings_Oral">Устная игра</string>
     <string name="text_game_settings_Minus">Отнимать очки</string>
@@ -22,8 +22,7 @@
     <string name="password_hint">Пароль</string>
     <string name="forgot_password">Забыли пароль?</string>
     <string name="profile_settings">Настройки профиля</string>
-    <string name="save">Сохранить изменения</string>
+    <string name="save_nickname">Сохранить никнейм</string>
     <string name="nickname">Никнейм</string>
     <string name="create_new_pack">Создание пакета</string>
-
 </resources>

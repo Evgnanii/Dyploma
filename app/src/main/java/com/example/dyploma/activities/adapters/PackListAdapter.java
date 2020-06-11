@@ -1,13 +1,13 @@
 package com.example.dyploma.activities.adapters;
 
 import android.content.Context;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.example.dyploma.R;
 import com.example.dyploma.logic.Round;
 
@@ -19,7 +19,7 @@ public class PackListAdapter extends BaseExpandableListAdapter {
     private ArrayList<Round> mGroups;
     private Context mContext;
 
-    public PackListAdapter (Context context, ArrayList<Round> groups){
+    public PackListAdapter(Context context, ArrayList<Round> groups) {
         mContext = context;
         mGroups = groups;
     }
@@ -68,16 +68,13 @@ public class PackListAdapter extends BaseExpandableListAdapter {
             convertView = inflater.inflate(R.layout.group_view_round, null);
         }
 
-        if (isExpanded){
+        if (isExpanded) {
             //Изменяем что-нибудь, если текущая Group раскрыта
-        }
-        else{
+        } else {
             //Изменяем что-нибудь, если текущая Group скрыта
         }
-
         TextView textGroup = (TextView) convertView.findViewById(R.id.textGroup);
         textGroup.setText(mGroups.get(groupPosition).getRoundName());
-
         return convertView;
 
     }
@@ -95,11 +92,9 @@ public class PackListAdapter extends BaseExpandableListAdapter {
         textChild.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext,"qwe",Toast.LENGTH_LONG).show();
+                Toast.makeText(mContext, "qwe", Toast.LENGTH_LONG).show();
             }
         });
-
-
         return convertView;
     }
 

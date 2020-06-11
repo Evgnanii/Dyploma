@@ -7,51 +7,503 @@
     android:orientation="horizontal"
     tools:context=".activities.MainActivity">
 
-    <EditText
-        android:layout_width="550dp"
-        android:layout_height="250dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/etQuestion"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/font1"
 
-    <fragment
-        android:id="@+id/player3"
-        android:name="com.example.dyploma.activities.fragments.ChooseRoleFragment$PlayerFragment"
-        android:layout_width="150dp"
-        android:layout_height="120dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"></fragment>
-
-    <fragment
-        android:id="@+id/player2"
-        android:name="com.example.dyploma.activities.fragments.ChooseRoleFragment$PlayerFragment"
-        android:layout_width="150dp"
-        android:layout_height="120dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintRight_toLeftOf="@+id/player3"></fragment>
-
-    <fragment
-        android:id="@+id/player1"
-        android:name="com.example.dyploma.activities.fragments.ChooseRoleFragment$PlayerFragment"
-        android:layout_width="150dp"
-        android:layout_height="120dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/player2"></fragment>
-
-    <fragment
-        android:id="@+id/presenter"
-        android:name="com.example.dyploma.activities.fragments.ChooseRoleFragment$PlayerFragment"
-        android:layout_width="150dp"
-        android:layout_height="120dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></fragment>
+        app:layout_constraintRight_toLeftOf="@id/linear_layout1"
+        app:layout_constraintTop_toBottomOf="@id/presenter_linear"></TextView>
+
+
+    <TextView
+        android:id="@+id/etAnswer"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/font1"
+
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/linear_layout1"
+        app:layout_constraintTop_toBottomOf="@id/etQuestion">
+
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="600dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_1_1"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="100"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_1_2"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="200"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_1_3"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="300"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_1_4"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="400"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_1_5"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="500"
+            android:textColor="@color/text_color"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout2"
+        android:layout_width="600dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_2_1"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="100"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_2_2"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="200"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_2_3"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="300"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_2_4"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="400"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_2_5"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="500"
+            android:textColor="@color/text_color"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout3"
+        android:layout_width="600dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="110dp"
+        android:orientation="horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_3_1"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="100"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_3_2"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="200"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_3_3"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="300"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_3_4"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="400"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_3_5"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="500"
+            android:textColor="@color/text_color"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout4"
+        android:layout_width="600dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="160dp"
+        android:orientation="horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_4_1"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="100"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_4_2"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="200"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_4_3"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="300"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_4_4"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="400"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_4_5"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="500"
+            android:textColor="@color/text_color"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout5"
+        android:layout_width="600dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="210dp"
+        android:orientation="horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_5_1"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="100"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_5_2"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="200"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_5_3"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+
+            android:text="300"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_5_4"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="400"
+            android:textColor="@color/text_color"></Button>
+
+        <Button
+            android:id="@+id/btn_5_5"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/font1"
+            android:text="500"
+            android:textColor="@color/text_color"></Button>
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/presenter_linear"
+        android:layout_width="130dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/linear_layout5"
+        app:layout_constraintRight_toRightOf="@+id/linear_layout1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+
+            android:id="@+id/presenter_image"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_boy"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+        <TextView
+            android:id="@+id/presenter_name"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:fontFamily="@font/font1"
+
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/presenter_image"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="130dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            app:layout_goneMarginTop="10dp">
+
+            <ImageView
+                android:id="@+id/image_player1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_boy"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+            <TextView
+                android:id="@+id/tv_player1_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/font1"
+
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_player1"></TextView>
+
+            <TextView
+                android:id="@+id/tv_player1_points"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/font1"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_player1_nickname"></TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="130dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            app:layout_goneMarginTop="10dp">
+
+            <ImageView
+                android:id="@+id/image_player2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:src="@drawable/ic_boy"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+            <TextView
+                android:id="@+id/tv_player2_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/font1"
+
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_player2"></TextView>
+
+            <TextView
+                android:id="@+id/tv_player2_points"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/font1"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_player2_nickname"></TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="130dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="10dp"
+
+            app:layout_goneMarginTop="10dp">
+
+            <ImageView
+                android:id="@+id/image_player3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_boy"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+            <TextView
+                android:id="@+id/tv_player3_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/font1"
+
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_player3"></TextView>
+
+            <TextView
+                android:id="@+id/tv_player3_points"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/font1"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_player3_nickname"></TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,15 +23,16 @@
 
 
     <ImageView
-        android:id="@+id/profileImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/profile_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_margin="10dp"
-        android:background="@drawable/ic_boy"
         android:fontFamily="@font/font1"
+        android:scaleType="centerCrop"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_profile_settings"></ImageView>
+        app:layout_constraintTop_toBottomOf="@id/tv_profile_settings"
+        app:srcCompat="@drawable/ic_boy"></ImageView>
 
     <EditText
         android:id="@+id/et_player_nickname"
@@ -42,16 +43,16 @@
         android:textColor="@color/text_color"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/profileImage"></EditText>
+        app:layout_constraintTop_toBottomOf="@id/profile_image"></EditText>
 
     <Button
-        android:id="@+id/save"
+        android:id="@+id/btn_save_nickname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="@drawable/button"
         android:fontFamily="@font/font1"
-        android:text="@string/save"
+        android:text="@string/save_nickname"
         android:textColor="@color/text_color"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

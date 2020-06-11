@@ -41,4 +41,13 @@
             android:text="@string/presenter_role"
             android:textColor="@color/text_color"></Button>
     </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_lobby_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/text_color"
+        android:textSize="25dp"></EditText>
 </LinearLayout>

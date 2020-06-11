@@ -31,6 +31,11 @@ public class Round {
         this.topicsList = topicsList;
     }
 
-
-
+    public Round(String roundName) {
+        this.roundName = roundName;
+        this.topicsList = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+            this.topicsList.add(new Topic("Тема" + i));
+        }
+    }
 }

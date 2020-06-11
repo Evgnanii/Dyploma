@@ -3,17 +3,45 @@ package com.example.dyploma;
 public class Lobby {
     boolean isFastStarOn;
     String creatorName;
-    Player player1;
-    Player player2;
-    Player player3;
-    Player presenter;
+    String player1;
+    String player2;
+    String player3;
+    String presenter;
     int timeToAnswer;
     int timeToFinal;
     int timeToClick;
     boolean isMinus;
     boolean isOral;
     String lobbyName;
+    String nameOfPackage;
+    String password;
+    String count;
 
+    public Lobby(String lobbyName, String creatorName, String nameOfPackage, String password) {
+        this.lobbyName = lobbyName;
+        this.password = password;
+        this.count = "0";
+        this.player1 = "empty";
+        this.player2 = "empty";
+        this.player3 = "empty";
+        this.presenter = "empty";
+        this.creatorName = creatorName;
+        this.timeToAnswer = Settings.timeToAnswer;
+        this.timeToClick = Settings.timeToClick;
+        this.timeToFinal = Settings.timeToFinal;
+        this.isOral = Settings.isOral;
+        this.isMinus = Settings.isMinus;
+        this.isFastStarOn = Settings.isFastStarOn;
+        this.nameOfPackage = nameOfPackage;
+    }
+
+    public void setFastStarOn(boolean fastStarOn) {
+        isFastStarOn = fastStarOn;
+    }
+
+    public String getNameOfPackage() {
+        return nameOfPackage;
+    }
 
     public Lobby() {
     }
@@ -28,38 +56,6 @@ public class Lobby {
 
     public void setCreatorName(String creatorName) {
         this.creatorName = creatorName;
-    }
-
-    public Player getPlayer1() {
-        return player1;
-    }
-
-    public void setPlayer1(Player player1) {
-        this.player1 = player1;
-    }
-
-    public Player getPlayer2() {
-        return player2;
-    }
-
-    public void setPlayer2(Player player2) {
-        this.player2 = player2;
-    }
-
-    public Player getPlayer3() {
-        return player3;
-    }
-
-    public void setPlayer3(Player player3) {
-        this.player3 = player3;
-    }
-
-    public Player getPresenter() {
-        return presenter;
-    }
-
-    public void setPresenter(Player presenter) {
-        this.presenter = presenter;
     }
 
     public int getTimeToAnswer() {
@@ -110,14 +106,55 @@ public class Lobby {
         this.lobbyName = lobbyName;
     }
 
-    public Lobby(String lobbyName, String creatorName) {
-        this.lobbyName = lobbyName;
-        this.creatorName = creatorName;
-        this.timeToAnswer = Settings.timeToAnswer;
-        this.timeToClick = Settings.timeToClick;
-        this.timeToFinal = Settings.timeToFinal;
-        this.isOral = Settings.isOral;
-        this.isMinus = Settings.isMinus;
-        this.isFastStarOn = Settings.isFastStarOn;
+    public void setNameOfPackage(String nameOfPackage) {
+        this.nameOfPackage = nameOfPackage;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getCount() {
+        return count;
+    }
+
+    public void setCount(String count) {
+        this.count = count;
+    }
+
+    public String getPlayer1() {
+        return player1;
+    }
+
+    public void setPlayer1(String player1) {
+        this.player1 = player1;
+    }
+
+    public String getPlayer2() {
+        return player2;
+    }
+
+    public void setPlayer2(String player2) {
+        this.player2 = player2;
+    }
+
+    public String getPlayer3() {
+        return player3;
+    }
+
+    public void setPlayer3(String player3) {
+        this.player3 = player3;
+    }
+
+    public String getPresenter() {
+        return presenter;
+    }
+
+    public void setPresenter(String presenter) {
+        this.presenter = presenter;
     }
 }
